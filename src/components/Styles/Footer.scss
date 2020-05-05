@@ -1,0 +1,251 @@
+.footer {
+  background-color: var(--gray);
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__title {
+  grid-column: 2/ 5;
+  grid-row: 1 / 2;
+  text-align: center;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 2/3;
+  }
+}
+.footer__img--tih {
+  grid-column: 2/ 3;
+  grid-row: 2 / 3;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 1/2;
+  }
+}
+
+.footer__img--idscea {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 2/ 3;
+  }
+}
+.footer__img--citein {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 2/ 3;
+  }
+}
+
+.footer__img--conacyt {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 3/ 4;
+  }
+}
+.footer__title--orange {
+  grid-column: 2 / 5;
+  grid-row: 5 / 6;
+  text-align: center;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 2/3;
+  }
+}
+.footer__img--ec {
+  position: relative;
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+  margin-top: 50px;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 2/3;
+  }
+}
+.footer__img--wh {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+  margin-top: 50px;
+
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 1/2;
+  }
+}
+.footer__img--mouser {
+  position: relative;
+  grid-column: 4 / 5;
+  grid-row: 6 / 7;
+  margin-top: 50px;
+
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 3;
+  }
+}
+.footer__img--vagos {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  margin-top: 50px;
+
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 1/2;
+  }
+}
+.footer__img--golem {
+  position: relative;
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 2/3;
+  }
+}
+.footer__img--prepa {
+  position: relative;
+  grid-column: 4 / 4;
+  grid-row: 7 / 8;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    grid-column: 3/3;
+  }
+}
+.footer__logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+  &--idsea {
+    width: 220px;
+  }
+  &--citein {
+    @extend .footer__logo;
+    width: 130px;
+  }
+  &--vagos {
+    @extend .footer__logo;
+    width: 130px;
+  }
+  &--golem {
+    @extend .footer__logo;
+    width: 130px;
+  }
+  &--prepa {
+    @extend .footer__logo;
+    width: 130px;
+  }
+  &--mouser {
+    @extend .footer__logo;
+    margin-top: 0px;
+    width: 150px;
+    @media (max-width: 740px) {
+      /* 
+        ##Device = Tablets,  devices xl
+      */
+      width: 150px;
+    }
+  }
+  @media (max-width: 740px) {
+    /* 
+      ##Device = Tablets,  devices xl
+    */
+    width: 150px;
+    &--idsea {
+      width: 170px;
+    }
+    &--citein {
+      width: 100px;
+    }
+  }
+  @media (max-width: 475px) {
+    /* 
+      ##Device =  devices M
+    */
+    width: 100px;
+    &--idsea {
+      width: 120px;
+    }
+    &--citein {
+      width: 100px;
+    }
+  }
+  &--wh {
+    @extend .footer__logo;
+    margin-top: 15px;
+    width: 130px;
+    @media (max-width: 740px) {
+      /* 
+        ##Device = Tablets,  devices xl
+      */
+      width: 90px;
+    }
+
+    @media (max-width: 475px) {
+      /* 
+        ##Device =  devices M
+      */
+      width: 70px;
+    }
+  }
+  &--xs {
+    @extend .footer__logo;
+    width: 100px;
+    @media (max-width: 740px) {
+      /* 
+        ##Device = Tablets,  devices xl
+      */
+      width: 90px;
+    }
+    @media (max-width: 475px) {
+      /* 
+        ##Device =  devices M
+      */
+      width: 70px;
+    }
+  }
+}

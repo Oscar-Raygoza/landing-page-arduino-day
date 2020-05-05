@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  font-size: 1.6em;
+  @media (max-width: 1125px) {
+    /* 
+      ##Device = Tablets, Ipads (portrait)
+    */
+    font-size: 1em;
+
+  }
+}
+.button__component {
+  color: var(--white);
+  text-decoration: none;
+  padding: 15px 45px 15px 45px;
+  border-radius: 15px;
+  background-color: var(--primary);
+  box-shadow: 5px 5px 5px var(--black);
+}
