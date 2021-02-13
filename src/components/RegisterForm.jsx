@@ -18,7 +18,7 @@ class RegisterForm extends Component {
       <Fragment>
         <section className="registerForm">
           <div className="registerForm__image--left">
-            <img src={bannerLeft} alt=""/>
+            <img src={bannerLeft} alt="" />
           </div>
           <div className="registerForm__button">
             <Button
@@ -32,7 +32,7 @@ class RegisterForm extends Component {
           </div>
           <div className="registerForm__date">
             <h2 className="header__subtitle--time color-secundary font-size-420">
-              13 DE MARZO / MUSEO DESCUBRE
+              13 DE MARZO / ONLINE
             </h2>
             <h2 className="header__subtitle--time color-primary margin-top-15 font-size-420">
               A partir de las 9:00 horas

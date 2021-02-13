@@ -19,7 +19,7 @@ class Footer extends Component {
   render() {
     return (
       <section className="footer">
-        <div className="footer__title">
+        {/*<div className="footer__title">
           <h1 className="david__footer--title color-secundary font-size-420--h1">
             Organizado por:
           </h1>
@@ -39,16 +39,16 @@ class Footer extends Component {
         </div>
         <div className="footer__img--citein">
           <img src={logoCitein} className="footer__logo--citein" alt="" />
-        </div>
-        <div className="footer__title--orange">
+    </div>*/}
+        <div className="footer__title">
           <h1 className="david__footer--title color-primary font-size-420--h1">
             Con apoyo de:
           </h1>
         </div>
-        <div className="footer__img--ec">
+        <div className="footer__img--idscea">
           <img src={logoEc} className="footer__logo--xs" alt="" />
         </div>
-        <div className="footer__img--wh">
+        {/*<div className="footer__img--wh">
           <img src={logoWhurth} className="footer__logo--wh" alt="" />
         </div>
         <div className="footer__img--mouser">
@@ -63,7 +63,7 @@ class Footer extends Component {
         </div>
         <div className="footer__img--prepa">
           <img src={logoPrepaTec} className="footer__logo--prepa" alt="" />
-        </div>
+  </div>*/}
         {console.log("*TURING*(2020)!".match(/([^A-Za-z*])/g))}
       </section>
     );

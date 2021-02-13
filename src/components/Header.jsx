@@ -5,8 +5,7 @@ import "./Styles/Header.scss";
 /**
  * Assets
  */
-import arduino from "../assets/images/ArduinoDayLogo.svg";
-import sedec from "../assets/images/SEDEC-min.png";
+import arduino from "../assets/images/ArduinoDayLogo.png";
 
 class Header extends Component {
   render() {
@@ -19,14 +18,11 @@ class Header extends Component {
               <h1 className="header__container--register">
                 !Registra tu proyecto!
               </h1>
-              <h2 className="header__container--date">
-                Tienes hasta el <br />
-                28 de Febrero
-              </h2>
+              <h2 className="header__container--date">PROXIMAMENTE</h2>
             </div>
           </div>
           <div className="header__title">
-            <img className="header__title--logo" src={sedec} alt="" sizes="" />
+            <div className="header__title--logo" />
             <span className="header__title--txt">CONSTRUYE</span>
             <span className="header__title--txt">DIVIÈRTETE</span>
             <span className="header__title--txt header__title--txt--xl">
@@ -35,11 +31,12 @@ class Header extends Component {
           </div>
           <div className="header__subtitle">
             <div className="header__subtitle--container">
-              <samp className="header__subtitle--number">13</samp>
+              <samp className="header__subtitle--number">20</samp>
               <samp className="header__subtitle--date">DE MARZO</samp>
+              <samp className="header__subtitle--number">2021</samp>
             </div>
             <div className="header__logo--descubre">
-              <h2 className="descubre--logo">MUSEO DESCUBRE</h2>
+              <h2 className="descubre--logo">ONLINE</h2>
             </div>
             <samp className="header__subtitle--time">
               A partir de las 9:00 horas
